@@ -30,5 +30,11 @@ let package = Package(
                 .headerSearchPath("../Sources/TDOCSDK/include")
             ]
         )
+    ],
+    dependencies: [
+    .package(
+        url: "https://github.com/zeinber/TDOCSDK.git", 
+        from: "1.0.0"
+        )
     ]
 )
