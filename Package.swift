@@ -8,6 +8,10 @@ let package = Package(
         .library(
             name: "TDOCSDK", 
             targets: ["TDOCSDK"])],
+    dependencies: [
+        .package(url: "https://github.com/zeinber/TDOCSDK.git",  
+        from: "1.0.0"),
+    ],
     targets: [
         .target(
             name: "TDOCSDK",
