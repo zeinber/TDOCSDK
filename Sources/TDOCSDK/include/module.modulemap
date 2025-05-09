@@ -1,0 +1,5 @@
+framework module TDOCSDK {
+    umbrella header "TDOCSDK.h"
+    export *
+    link framework "Foundation"
+}
