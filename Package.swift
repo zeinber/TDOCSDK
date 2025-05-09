@@ -18,9 +18,7 @@ let package = Package(
             path: "Sources/TDOCSDK",
             publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("include"),
-                .define("NS_BLOCK_ASSERTIONS", to: "1"),
-                .unsafeFlags(["-Wno-deprecated-declarations"])
+                .headerSearchPath("include")
             ],
             linkerSettings: [
                 .linkedFramework("Foundation")
