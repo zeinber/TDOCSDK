@@ -8,10 +8,10 @@ let package = Package(
         .library(
             name: "TDOCSDK", 
             targets: ["TDOCSDK"])],
-    dependencies: [
-        .package(url: "https://github.com/zeinber/TDOCSDK.git",  
-        from: "1.0.0"),
-    ],
+    // dependencies: [
+    //     .package(url: "https://github.com/zeinber/TDOCSDK.git",  
+    //     from: "1.0.0"),
+    // ],
     targets: [
         .target(
             name: "TDOCSDK",
@@ -21,7 +21,8 @@ let package = Package(
                 .headerSearchPath("include")
             ],
             linkerSettings: [
-                .linkedFramework("Foundation")
+                .linkedFramework("Foundation"),
+                .linkedFramework("UIKit")
             ]
         ),
         .testTarget(

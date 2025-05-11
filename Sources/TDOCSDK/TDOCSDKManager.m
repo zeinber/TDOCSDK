@@ -6,9 +6,11 @@
 //
 
 #import "TDOCSDKManager.h"
+#import <UIKit/UIKit.h>
 
 @implementation TDOCSDKManager
 + (void)initializeSDK {
-    NSLog(@"SDK Initialized!");
+    UIDevice *device = [UIDevice currentDevice];
+    NSLog(@"SDK Initialized:%@",device.name);
 }
 @end
