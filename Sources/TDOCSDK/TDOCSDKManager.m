@@ -11,6 +11,6 @@
 @implementation TDOCSDKManager
 + (void)initializeSDK {
     UIDevice *device = [UIDevice currentDevice];
-    NSLog(@"SDK Initialized:%@",device.name);
+    NSLog(@"SDK Initialized:%@ - %@",device.name,device.systemVersion);
 }
 @end
